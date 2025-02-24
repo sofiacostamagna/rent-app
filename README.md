@@ -1,6 +1,7 @@
 # Rent - Find Your Perfect Home
 
 **Rent** is a web application to help users find the perfect house or apartment for rent or purchase. With a clean and modern interface, users can discover properties and view key details, all while enjoying a smooth and optimized experience.
+
 ## Project Link
 
 [https://github.com/sofiacostamagna/rent-app.git]

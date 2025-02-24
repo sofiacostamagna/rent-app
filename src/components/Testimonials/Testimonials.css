@@ -42,7 +42,6 @@
 .testimonial-card-container {
   display: flex;
   gap: 2rem;
-  overflow: hidden; /* Asegúrate de que las tarjetas no se desborden */
 }
 
 .testimonial-card {

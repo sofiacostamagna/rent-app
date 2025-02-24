@@ -1,0 +1,113 @@
+.newsletter-section {
+    padding: 4rem 1rem;
+    background-color: white;
+    text-align: center;
+    color: var(--color-letra);
+  }
+  
+  .newsletter-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--color-letra-resalt);
+  }
+  
+  .newsletter-description {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: var(--color-letra);
+  }
+  
+  .newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .newsletter-form input {
+    width: 70%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: var(--color-letra);
+    background-color: white;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .newsletter-form input:focus {
+    border-color: var(--color-botones);
+    box-shadow: 0 0 0 3px rgba(112, 101, 240, 0.2);
+  }
+  
+  .newsletter-button {
+    background-color: var(--color-botones);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .newsletter-button:hover {
+    background-color: var(--color-botones-secundarios);
+  }
+  
+  .newsletter-message {
+    font-size: 1rem;
+    color: var(--color-letra-resalt);
+    margin-top: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .newsletter-form {
+      flex-direction: column;
+      align-items: center;
+      margin: 40px;
+    }
+  
+    .newsletter-form input {
+      width: 100%;
+    }
+  
+    .newsletter-button {
+      width: 100%;
+    }
+  }
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.popup-content.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.popup-content button {
+  margin-top: 10px;
+}
+
+.newsletter-error {
+  color: red;
+  margin-top: 10px;
+}

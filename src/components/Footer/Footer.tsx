@@ -13,6 +13,7 @@ import "./Footer.css";
 const Footer: React.FC = () => {
   return (
     <footer className="footer-section">
+          <div className="footer-divider"></div>
       <div className="footer-content">
         {/* Logo and Social Media */}
         <div className="footer-top">
@@ -37,6 +38,7 @@ const Footer: React.FC = () => {
 
         {/* Information Sections */}
         <div className="footer-sections">
+          
           <div className="footer-column">
             <h4>About</h4>
             <p>We provide the best rental properties with excellent service.</p>

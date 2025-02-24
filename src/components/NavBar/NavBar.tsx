@@ -34,7 +34,7 @@ const NavBar: React.FC = () => {
           <li><a href="#sell" className="text-letra hover:text-letra-resalt">Sell</a></li>
           {/* Login and Signup buttons (mobile only) */}
           <li className="md:hidden"><button className="inactive w-full">Login</button></li>
-          <li className="md.hidden"><button className="bg-botones text-white px-4 py-2 rounded w-full">Signup</button></li>
+          <li className="md:hidden"><button className="bg-botones text-white px-4 py-2 rounded w-full">Signup</button></li>
         </ul> 
       </nav>
     </header>
