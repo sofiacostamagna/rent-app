@@ -61,7 +61,7 @@ const Features: React.FC = () => {
             personalized services, priority support, and much more.
           </p>
           <button className="secondary" style={{ fontSize: '0.875rem', padding: '0.5rem 1.5rem' }}>Learn More</button>
-          <img src="/public/Illustration.png" alt="Illustration" className="feature-image" />
+          <img src="/Illustration.png" alt="Illustration" className="feature-image" />
         </motion.div>
       </div>
     </section>
