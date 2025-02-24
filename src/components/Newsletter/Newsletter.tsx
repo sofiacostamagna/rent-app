@@ -4,7 +4,6 @@ import './Newsletter.css';
 
 const Newsletter: React.FC = () => {
   const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
   const [showPopup, setShowPopup] = useState(false);
   const [error, setError] = useState('');
 
@@ -17,7 +16,6 @@ const Newsletter: React.FC = () => {
     setError('');
     // Simulate API call
     await new Promise((resolve) => setTimeout(resolve, 1000));
-    setMessage('Thank you for subscribing!');
     setEmail(''); 
     setShowPopup(true); 
   };

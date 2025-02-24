@@ -48,14 +48,12 @@ const Testimonials: React.FC = () => {
 
   // Function to go to the next testimonial
   const nextTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    setCurrentIndex((prevIndex) => Math.min(prevIndex + 1, testimonials.length - 1));
   };
 
   // Function to go to the previous testimonial
   const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-    );
+    setCurrentIndex((prevIndex) => Math.max(prevIndex - 1, 0));
   };
 
   const testimonialsToShow = isMobile ? testimonials.slice(currentIndex, currentIndex + 1) : testimonials.slice(currentIndex, currentIndex + 2);
@@ -67,7 +65,11 @@ const Testimonials: React.FC = () => {
       </h2>
       <p className="section-subtitle">We value our clients' feedback and strive to provide the best service possible.</p>
       <div className="testimonials-carousel">
-        <button className="carousel-button prev" onClick={prevTestimonial}>
+        <button
+          className="carousel-button prev"
+          onClick={prevTestimonial}
+          disabled={currentIndex === 0}
+        >
           &#10094;
         </button>
         <AnimatePresence mode="wait">
@@ -94,7 +96,11 @@ const Testimonials: React.FC = () => {
             ))}
           </motion.div>
         </AnimatePresence>
-        <button className="carousel-button next" onClick={nextTestimonial}>
+        <button
+          className="carousel-button next"
+          onClick={nextTestimonial}
+          disabled={currentIndex >= testimonials.length - (isMobile ? 1 : 2)}
+        >
           &#10095;
         </button>
       </div>
