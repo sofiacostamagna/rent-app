@@ -1,50 +1,107 @@
-# React + TypeScript + Vite
+# Rent - Find Your Perfect Home
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Rent** is a web application to help users find the perfect house or apartment for rent or purchase. With a clean and modern interface, users can discover properties and view key details, all while enjoying a smooth and optimized experience.
 
-Currently, two official plugins are available:
+## Project Link
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[https://github.com/sofiacostamagna/rent-app.git]
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Interactive search for houses and apartments.
+- Testimonials section with user comments.
+- Pricing section with plans and details.
+- Contact form for inquiries.
+- Smooth animations to enhance user experience.
 
-- Configure the top-level `parserOptions` property like this:
+## Project Structure
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+The project is structured as follows:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+src/
+│── components/
+    │── NavBar.tsx # NavBar section component
+    │── Hero.tsx # Hero section component
+    │── Features.tsx # Component showing main features
+    │── Testimonials.tsx # Component showing user testimonials
+    │── Pricing.tsx # Pricing section component
+    │── Contact.tsx # Contact form component
+    │── Footer.tsx # Footer component
+│── pages/
+    │── Home.tsx # Main page
+│── App.tsx # Main application component
+│── main.tsx # Main React entry point
+│── index.css # Global styles
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Each component has its own associated style file in the same folder.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Technologies Used
+
+- **React**: To build the user interface.
+- **TypeScript**: For safer and more robust code.
+- **CSS Modules**: For modularized styles.
+- **Tailwind CSS**: For quick and custom design and styles.
+- **Framer Motion**: For smooth and dynamic animations.
+
+## Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/sofiacostamagna/rent-app.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd rent-app
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the application in development mode:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open http://localhost:3000 in your browser to view the application.
+
+## Functionality
+
+- **Hero Section**: Presents a header and a call-to-action button to discover more properties.
+- **Features Section**: Shows the key features of the property search service.
+- **Testimonials Section**: Displays user comments fetched from an API.
+- **Pricing Section**: Presents the prices for subscription plans.
+- **Contact Form**: A simple form for inquiries or contact.
+- **Footer**: Links to social media and company details.
+
+## Contribute
+
+1. Fork the repository.
+
+2. Create a new branch:
+
+   ```bash
+   git checkout -b feature/new-feature
+   ```
+
+3. Make your changes and commit them:
+
+   ```bash
+   git commit -am 'Add new functionality'
+   ```
+
+4. Push to the branch:
+
+   ```bash
+   git push origin feature/new-feature
+   ```
+
+5. Open a Pull Request.
+
+Thank you for contributing to Rent! If you have any questions or suggestions, feel free to open an issue or send a PR. 🙌
