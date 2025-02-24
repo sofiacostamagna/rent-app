@@ -1,0 +1,133 @@
+.contact-section {
+  padding: 10rem 1rem; 
+  background-color: var(--color-primary);
+  text-align: center;
+}
+
+.section-title {
+  color: var(--color-letra);
+  margin-bottom: 2rem;
+  font-size: 3rem; 
+  font-weight: bold;
+  margin-bottom: 2rem; 
+  line-height: 2;
+  letter-spacing: 0.1rem;
+  font-family: 'Poppins', sans-serif; 
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin: 1rem 2rem; 
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  color: var(--color-letra);
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--color-letra);
+  background-color: #f9f9f9;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: var(--color-botones);
+  box-shadow: 0 0 0 3px rgba(112, 101, 240, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.error {
+  color: #ff4d4d;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+  display: block;
+}
+
+.submit-button {
+  display: block;
+  width: fit-content;
+  margin: 2rem auto 0 auto;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--color-botones);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: var(--color-botones-secundarios);
+}
+
+@media (max-width: 768px) {
+  .contact-form {
+    padding: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.popup-content h3 {
+  margin-top: 0;
+}
+
+.popup-content button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: white;
+  background-color: var(--color-botones);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.popup-content button:hover {
+  background-color: var(--color-botones-secundarios);
+}

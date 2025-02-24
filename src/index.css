@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Plus Jakarta Sans', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: var(--color-letra); 
+  background-color: var(--color-fondo); 
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-fondo: #E0DEF7;
+  --color-secundario: #100A55;
+  --color-letra: #000929;
+  --color-letra-resalt: #7065F0;
+  --color-botones: #7065F0;
+  --color-botones-secundarios: #100A55;
+  --color-cuadros: #FFFFFF;
+  --color-navbar: #F0EFFB;
+  --color-hover: #5046c0; 
+}
+
+a {
+  font-weight: 500;
+  color: var(--color-botones);
+  text-decoration: inherit;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: var(--color-hover);
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-fondo);
+}
+
+.navbar-logo {
+  font-family: 'OriginalFont', sans-serif; 
+  color: var(--color-letra-resalt);
+  font-size: 1.5rem; 
+  font-weight: bolder;
+  font-style: oblique;
+  display: flex;
+  align-items: center;
+}
+
+.home-icon {
+  margin-right: 0.5rem;
+  font-size: 1.5rem; 
+  color: var(--color-letra-resalt);
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: var(--color-letra);
+  margin-bottom: 1rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--color-botones);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+button:hover {
+  background-color: var(--color-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+button.secondary {
+  background-color: var(--color-botones-secundarios);
+  color: white;
+  border: 1px solid transparent;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+}
+button.secondary:hover {
+  background-color: #0e0844;
+  border-color: #0e0844;
+}
+
+button.inactive {
+  border: 2px solid var(--color-botones);
+  background-color: transparent;
+  color: var(--color-botones);
+}
+button.inactive:hover {
+  background-color: rgba(112, 101, 240, 0.1);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  button {
+    padding: 0.5em 1em;
+    font-size: 0.9em;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem; 
+  }
+
+  .home-icon {
+    font-size: 1.5rem; 
+  }
+
+  .navbar-logo span {
+    display: none; 
+  }
+}

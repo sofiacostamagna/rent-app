@@ -1,0 +1,125 @@
+.pricing-section {
+    padding: 10rem 1rem;
+    background-color: var(--color-cuadros);
+    text-align: center;
+  }
+  
+  .section-title {
+    color: var(--color-letra);
+    margin-bottom: 2rem;
+    font-size: 3rem; 
+    font-weight: bold;
+    margin-bottom: 2rem; 
+    line-height: 2;
+    letter-spacing: 0.1rem;
+    font-family: 'Poppins', sans-serif; 
+  }
+  
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 80px auto;
+    flex-wrap: wrap;
+  }
+  
+  .pricing-card {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    position: relative;
+  }
+  
+  .pricing-card.recommended {
+    border: 2px solid var(--color-letra-resalt);
+    transform: scale(1.05);
+  }
+  
+  .pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .recommended-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-letra-resalt);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+  }
+  
+  .pricing-tier-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-letra);
+    margin-bottom: 1rem;
+  }
+  
+  .pricing-tier-price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--color-letra-resalt);
+    margin-bottom: 1.5rem;
+  }
+  
+  .pricing-tier-price span {
+    font-size: 1rem;
+    color: var(--color-letra);
+  }
+  
+  .pricing-tier-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .pricing-tier-features li {
+    font-size: 1rem;
+    color: var(--color-letra);
+    margin-bottom: 0.5rem;
+  }
+  
+  .pricing-tier-button {
+    background-color: var(--color-botones);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .pricing-tier-button:hover {
+    background-color: var(--color-botones-secundarios);
+  }
+  
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem; 
+    }
+
+    .pricing-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .pricing-card {
+      max-width: 70%;
+    }
+  
+    .pricing-card.recommended {
+      transform: scale(1);
+    }
+  }
